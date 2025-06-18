@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI-Powered Real Estate Platform</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- Portfolio Details Section -->
+    <style>
+      :root {
+        --primary: #1565c0;
+        --accent: #0d47a1;
+        --bg: #f9fbff;
+        --text: #212121;
+        --radius: 14px;
+      }
+
+      .project-main {
+        font-family: "Poppins", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.7;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 24px;
+      }
+
+      .hero {
+        text-align: center;
+        background: linear-gradient(180deg, #e3f2fd, #ffffff);
+        padding: 80px 24px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        margin-top: 12px;
+        color: #555;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        margin-top: 24px;
+        background: var(--primary);
+        color: white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 6px 16px rgba(21, 101, 192, 0.3);
+        transition: 0.3s;
+      }
+      .cta-btn:hover {
+        background: var(--accent);
+      }
+
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 36px;
+        text-align: center;
+        color: var(--accent);
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+      }
+
+      .mockup-img {
+        width: 100%;
+        border-radius: var(--radius);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 16px;
+      }
+
+      .tech-tags li {
+        background: #e3f2fd;
+        color: var(--primary);
+        padding: 6px 16px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 500;
+        list-style: none;
+      }
+
+      .features-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .feature-card {
+        background: #ffffff;
+        border-radius: var(--radius);
+        padding: 24px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        transition: 0.3s ease;
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+      }
+
+      .btn-link {
+        display: inline-block;
+        margin: 12px 18px 0 0;
+        padding: 12px 24px;
+        background: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .btn-dark {
+        background: var(--accent);
+      }
+    </style>
+  </head>
+
+  <body class="portfolio-details-page">
+    <main class="project-main">
+      <div class="page-title" data-aos="fade">
+        <div
+          class="container_navbar"
+          style="margin-left: 60px; text-align: center"
+        >
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html#portfolio">Home</a></li>
+              <li class="current">Real Estate Platform</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">AI-Powered Real Estate Platform</h1>
+          <p class="hero-subtitle">
+            Full-stack solution that streamlines property transactions using ML,
+            Firebase, and cloud technologies.
+          </p>
+          <a href="https://www.ibuyr.in" target="_blank" class="cta-btn"
+            >View Live Demo</a
+          >
+        </div>
+      </section>
+
+      <section class="overview section">
+        <div class="container grid-2">
+          <div>
+            <h2>Project Overview</h2>
+            <p>
+              This intelligent real estate platform was built using the MERN
+              stack with AI integrations to offer dynamic property pricing,
+              secure transactions, and an intuitive user experience for buyers,
+              sellers, and admins alike.
+            </p>
+            <ul class="tech-tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Redux Toolkit</li>
+              <li>Firebase</li>
+              <li>SendGrid</li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="assets/img/portfolio/real_estate_home1.png"
+              alt="Platform Screenshot"
+              class="mockup-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="container">
+          <h2 class="section-title">Key Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>ML Price Prediction</h3>
+              <p>
+                AI models estimate property value based on historical data and
+                listing inputs.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Role-Based Dashboards</h3>
+              <p>
+                Separate panels for buyers, sellers, and admins with secure
+                login.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Cloud Image Upload</h3>
+              <p>
+                Firebase storage integration for high-resolution listing
+                uploads.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>SendGrid Integration</h3>
+              <p>
+                Secure and fast contact mechanism between buyers and sellers via
+                email API.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="challenges section">
+        <div class="container">
+          <h2>Development Insights</h2>
+          <p>
+            The biggest challenge was managing high-resolution uploads with
+            seamless UI responsiveness. Implementing Firebase's security rules
+            and efficient image handling pipelines enabled stable and scalable
+            file management. Redux Toolkit allowed clean, manageable global
+            state for UI transitions and user sessions.
+          </p>
+        </div>
+      </section>
+
+      <section class="future section">
+        <div class="container">
+          <h2>What’s Next</h2>
+          <ul>
+            <li>
+              📍 Map-based listing geolocation with Leaflet or Google Maps API
+            </li>
+            <li>🔔 Push notifications for user activity</li>
+            <li>💳 Payment integration for premium listings</li>
+            <li>📊 Advanced analytics dashboard for admins</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project-links section">
+        <div class="container">
+          <a
+            href="https://github.com/nishitsharma123/real_estate_platform"
+            target="_blank"
+            class="btn-link"
+            >GitHub Repo</a
+          >
+          <a
+            href="https://www.ibuyr.in"
+            target="_blank"
+            class="btn-link btn-dark"
+            >Live Project</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <h3 class="sitename">Nishit Sharma</h3>
+        <p>Crafted with clarity and curiosity by Nishit Sharma.</p>
+
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/nishitsharma128"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-skype"></i></a>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <p>
+              &copy; 2025 Nishit Sharma — Building with purpose, learning every
+              day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main_project.js"></script>
+  </body>
+</html>
