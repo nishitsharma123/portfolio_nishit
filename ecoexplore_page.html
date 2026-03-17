@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EcoExplorer - Environmental Platform</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      :root {
+        --primary: #1565c0;
+        --accent: #0563bb;
+        --bg: #f4f9f4;
+        --text: #212121;
+        --radius: 14px;
+      }
+
+      .project-main {
+        font-family: "Poppins", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 24px;
+      }
+
+      .hero {
+        text-align: center;
+        background: linear-gradient(180deg, #e8f5e9, #ffffff);
+        padding: 80px 20px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .hero-subtitle {
+        margin-top: 10px;
+        color: #555;
+      }
+
+      .cta-btn {
+        margin-top: 20px;
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        padding: 12px 28px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 30px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+      }
+
+      .mockup-img {
+        width: 100%;
+        border-radius: var(--radius);
+      }
+
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .tech-tags li {
+        background: #e8f5e9;
+        color: var(--primary);
+        padding: 6px 14px;
+        border-radius: 999px;
+        list-style: none;
+      }
+
+      .features-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .feature-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: var(--radius);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+      }
+
+      .feature-card.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .btn-link {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background: var(--primary);
+        color: #fff;
+        border-radius: var(--radius);
+        text-decoration: none;
+      }
+
+      .btn-dark {
+        background: var(--accent);
+      }
+
+      /* 🔥 Scroll Reveal Animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.8s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="project-main">
+
+      <!-- Breadcrumb -->
+      <div class="page-title">
+        <div style="text-align:center; margin-left: 60px">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html#portfolio">Home</a></li>
+              <li class="current">EcoExplorer</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero reveal">
+        <div class="container">
+          <h1 class="hero-title">EcoExplorer 🌿</h1>
+          <p class="hero-subtitle">
+            Explore nature, report forest threats, and learn sustainable practices — all in one platform.
+          </p>
+          <a href="https://www.ecoexplorer.online" class="cta-btn">View Live Demo</a>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="overview reveal">
+        <div class="container grid-2">
+          <div>
+            <h2>Project Overview</h2>
+            <p>
+              EcoExplorer is a modern environmental awareness platform that allows users
+              to explore flora and fauna, report illegal activities, and engage in
+              interactive learning through quizzes and real-time data.
+            </p>
+            <ul class="tech-tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Firebase</li>
+              <li>Geolocation API</li>
+            </ul>
+          </div>
+          <div>
+            <img src="assets/img/portfolio/main_eco.png" class="mockup-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features reveal">
+        <div class="container">
+          <h2 class="section-title">Key Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>🌿 Explore Nature</h3>
+              <p>Discover detailed information about plants, animals, and ecosystems.</p>
+            </div>
+            <div class="feature-card">
+              <h3>📍 Live Reporting</h3>
+              <p>Report illegal activities with geolocation tagging in real-time.</p>
+            </div>
+            <div class="feature-card">
+              <h3>🧠 Eco Quiz</h3>
+              <p>Interactive quizzes to test and improve environmental knowledge.</p>
+            </div>
+            <div class="feature-card">
+              <h3>🔔 Notifications</h3>
+              <p>Stay updated with alerts and environmental news.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Insights -->
+      <section class="challenges reveal">
+        <div class="container">
+          <h2>Development Insights</h2>
+          <p>
+            One of the key challenges was integrating real-time reporting with geolocation
+            while ensuring performance and scalability.
+          </p>
+        </div>
+      </section>
+
+      <!-- Future -->
+      <section class="future reveal">
+        <div class="container">
+          <h2>What’s Next</h2>
+          <ul>
+            <li>🌍 AI-based species recognition</li>
+            <li>📊 Advanced analytics dashboard</li>
+            <li>📱 Mobile app integration</li>
+            <li>🤝 NGO collaboration system</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="project-links reveal">
+        <div class="container">
+          <a href="https://github.com/nishitsharma123/EcoExplorer" class="btn-link">GitHub Repo</a>
+          <a href="https://www.ecoexplorer.online" class="btn-link btn-dark">Live Project</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 🔥 Scroll Animation Script -->
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+      const featureCards = document.querySelectorAll(".feature-card");
+
+      function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+
+        reveals.forEach((el) => {
+          const elementTop = el.getBoundingClientRect().top;
+          const revealPoint = 100;
+
+          if (elementTop < windowHeight - revealPoint) {
+            el.classList.add("active");
+          }
+        });
+
+        // Stagger feature cards
+        featureCards.forEach((card, index) => {
+          const cardTop = card.getBoundingClientRect().top;
+
+          if (cardTop < windowHeight - 50) {
+            setTimeout(() => {
+              card.classList.add("active");
+            }, index * 150);
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+    </script>
+
+  </body>
+</html>
